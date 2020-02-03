@@ -19,6 +19,10 @@ class Wps_Wwis_Admin {
 	public function wpspeed_add_admin_menu() {
 	add_options_page( 'WP Speed', 'WP Speed', 'manage_options', WPS_WWIS_PAGE_SLUG, 'wpspeed_options_page' );
 	}
+	public function wpspeed_settings_action_links( $links, $file ) {
+	array_unshift( $links, '<a href="' . admin_url( 'options-general.php?page=wpspeed-options' ) . '">' . __( 'Settings' ) . '</a>' );
+	return $links;
+	}
 	public function wpspeed_settings_init() {
 	global $wpspeed_settings_name, $wps_actions, $wps_sections;
 	register_setting( WPS_WWIS_SLUG, $wpspeed_settings_name );
