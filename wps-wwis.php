@@ -20,17 +20,15 @@
  * Text Domain:       wps-wwis
  * Domain Path:       /languages
  */
-
-// If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 define( 'WPS_WWIS_VERSION', '1.0.0' );
-
-/**
- * The code that runs during plugin activation.
- * This action is documented in includes/class-wps-wwis-activator.php
- */
+define( 'WPS_WWIS_DIR', dirname( __FILE__ ) );
+define( 'WPS_WWIS_URL', plugin_dir_url( __FILE__ ) );
+define( 'WPS_WWIS_SLUG', 'wpspeed_settings' );
+define( 'WPS_WWIS_LG', 'wpspeed' );
+define( 'WPS_WWIS_PAGE_SLUG', 'wpspeed' );
 function activate_wps_wwis() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wps-wwis-activator.php';
 	Wps_Wwis_Activator::activate();
