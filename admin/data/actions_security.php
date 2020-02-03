@@ -68,7 +68,7 @@ public function wpspeed_deactivate_author_page_and_link() {
 
 //
 
-public function wptuning_deactivate_connection_error_wplogin(){
+public function wpspeed_deactivate_connection_error_wplogin(){
 
 	add_filter( 'login_errors', '__return_empty_string' );
 }
