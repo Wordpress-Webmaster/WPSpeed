@@ -18,6 +18,9 @@ class Wps_Wwis_Admin {
 public function enqueue_scripts() {
 wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/wps-wwis-admin.js', array( 'jquery' ), $this->version, false );
 	}
+public function wpspeed_add_admin_menu() {
+add_options_page( 'WP Speed', 'WP Speed', 'manage_options', WPS_WWIS_PAGE_SLUG, 'wpspeed_options_page' );
+}
 	
 }
 
