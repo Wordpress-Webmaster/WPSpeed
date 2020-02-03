@@ -1,4 +1,4 @@
- 
+
 <?php
 /**
  * @link       https://wordpress-webmaster.de
