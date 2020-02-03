@@ -2,3 +2,6 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+table.form-table tr.wpspeed_disabled th {
+			color: #aaa;
+		}
