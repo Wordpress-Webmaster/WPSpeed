@@ -7,7 +7,7 @@
  * @subpackage Wps_Wwis/admin
  * @author     Volkan Sah <plugin@wordpress-webmaster.de>
  */
-class Wps_Wwis_Admin {
+class Wps_Wwis_Admin_Action_Security {
 	private $plugin_name;
 	private $version;
 	public function __construct( $plugin_name, $version ) {
