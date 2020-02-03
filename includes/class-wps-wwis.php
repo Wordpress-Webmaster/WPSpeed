@@ -1,7 +1,5 @@
 <?php
-
 /**
- *
  * @link       https://wordpress-webmaster.de
  * @since      1.0.0
  * @package    Wps_Wwis
@@ -19,10 +17,12 @@ class Wps_Wwis {
 			$this->version = '1.0.0';
 		}
 		$this->plugin_name = 'wps-wwis';
-
 		$this->load_dependencies();
 		$this->set_locale();
 		$this->define_admin_hooks();
+		// Workspace 
+		$this->define_public_hooks();
+
 		$this->define_public_hooks();
 
 	}
@@ -36,7 +36,6 @@ class Wps_Wwis {
 	}
 
 	private function set_locale() {
-
 		$plugin_i18n = new Wps_Wwis_i18n();
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
 	}
