@@ -1,7 +1,18 @@
 <?php
 /**
- * Head cleaning
+ * @link       https://wordpress-webmaster.de
+ *
+ * @package    Wps_Wwis
+ * @subpackage Wps_Wwis/admin
+ * @author     Volkan Sah <plugin@wordpress-webmaster.de>
  */
+class Wps_Wwis_Admin_Head {
+	private $plugin_name;
+	private $version;
+	public function __construct( $plugin_name, $version ) {
+		$this->plugin_name = $plugin_name;
+		$this->version = $version;
+	}
 public function wpspeed_wp_generator() {
 	remove_action( 'wp_head', 'wp_generator' );					
 public function wpspeed_wlwmanifest_link() {
