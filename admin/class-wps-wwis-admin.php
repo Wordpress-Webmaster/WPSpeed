@@ -94,7 +94,7 @@ public function wpspeed_options_page() {
 	?>
 	<form action='options.php' method='post'>
 
-		<h1>WP Tuning</h1>
+		<h1>WP Speed</h1>
 		<p>
 			<?php echo __( 'Speed Up your Wordpress', WPS_WWIS_LG ); ?>
 		</p>
